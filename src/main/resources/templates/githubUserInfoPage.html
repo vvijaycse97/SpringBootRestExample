@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>User Landing Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+<link href="css/main.css" rel="stylesheet" />
+<style>
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+	text-align: left;
+}
+</style>
+</head>
+<div th:object="${session}" class="headfootContentusrland">
+	Welcome <span th:text="*{userName}"> </span> <span> !!! </span>
+</div>
+<body class="body-content">
+	<div class="page-content">
+		<div th:object="${session}" class="login-content">
+			<table class="tabledetails">
+				<tr>
+					<th>GitHub Property</th>
+					<th>Value</th>
+				</tr>
+
+				<tr>
+					<td>Github User Name</td>
+					<td><span th:text="*{githublogin}"> </span></td>
+				</tr>
+
+				<tr>
+					<td>Github User Created Date</td>
+					<td><span th:text="*{githubUsrCreatedDt}"> </span></td>
+				</tr>
+
+				<tr>
+					<td>Github User Last Updated Date</td>
+					<td><span th:text="*{githubUsrlastUpdatedDt}"> </span></td>
+				</tr>
+
+				<tr>
+					<td>Github User Public Repos</td>
+					<td><span th:text="*{githubpublicrepo}"> </span></td>
+				</tr>
+			</table>
+
+		</div>
+	</div>
+	<input type="button" class="buttonstyleright"
+		onClick="location.href='logout.html'" value='Click here to Logout' />
+</body>
+</html>

@@ -1,0 +1,141 @@
+.headfootContent
+{	
+    padding: 5px;
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 1px;
+    padding-left: 575px;
+    width: 200px;
+      
+ }
+ .headfootContentusrland
+ {
+    padding: 5px;
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 1px;
+    padding-left: 495px;
+    width: 950px
+ }
+
+.login-content
+{
+    width: 482px;
+    padding: 25px;
+    height: 266px;
+    padding-top: 128px;
+    padding-left: 317px;
+}
+.body-content
+{
+  width: 500px;  
+  background-color:#4158d0;  
+}
+
+.page-content
+{
+    width: 1150px;
+    background: #fff;
+    margin-left: 94px;
+    height: 550px;
+}
+
+.tabledetails
+{  
+    margin: auto;
+    width: 500px;
+    height: 245px;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.tablelabel
+{
+	padding: 5px;
+    font-size: 20px;
+    color: #1811DA;
+    letter-spacing: 1px;
+    padding-left:55px;     
+}
+.tableval
+{
+	padding: 5px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color:red;
+}
+
+.buttonstylelogin
+{
+	border: none;
+    align: center;
+    font-size: 28px;
+    width: 133px;
+    height: 50px;
+    position: sticky;
+    text-align: center;
+    padding-left: 20px;
+    float: right;
+    margin-left: 185px;
+    background: #57b846;
+}
+
+.buttonstylelog
+{
+	border: none;
+    align: center;
+    font-size: 28px;    
+    width: 330px;
+    height: 50px;    
+    text-align: center;
+    padding-left: 0px;    
+    margin-left: 201px;
+    background: #57b846;
+}
+
+.buttonstyleright
+{
+	 display: block;
+	 border: none;
+	 position: absolute;
+	 right:0px;  
+	 top:0px;
+	 width: 180px;
+  	 height: 40px;
+  	 font-size: 19px;
+  	 text-align: center;
+  	 background-color: #e0ebeb;
+}
+
+.errstyle
+{	
+	color:red;	
+}
+
+.body-content-errpage
+{
+  width: 500px;  
+  background-color:#4158d0;  
+}
+.page-content-errpage {
+    width: 1033px;
+    background: #fff;
+    margin-left: 165px;
+    margin-top: 57px;
+    height: 410px;
+}
+
+.login-content-errpage {
+    width: 482px;
+    padding: 25px;
+    height: -28px;  
+    padding-top: 128px;
+    padding-left: 340px;
+}
+.tabledetails-errpage {
+    margin: auto;
+    width: 500px;
+    height: 0px;
+    font-size: 24px;   
+    letter-spacing: 1px;
+}

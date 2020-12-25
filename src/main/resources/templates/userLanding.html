@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>User Landing Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+<link href="css/main.css" rel="stylesheet" />
+</head>
+
+<div th:object="${session}" class="headfootContentusrland">
+	Welcome <span th:text="*{userName}"> </span> <span> !!! </span>
+</div>
+<body class="body-content">
+	<div class="page-content">
+		<div class="login-content">
+			<form action="#" th:action="@{/githubUserInfoPage}"
+				th:object="${login}" method="post">
+				<table class="tabledetails">
+					<tr>
+						<td class="tablelabel">GitHub User Name:</td>
+						<td class="tableval"><input type="text"
+							th:field="*{githubusername}" th:required="required"
+							maxlength="50" placeholder="Enter your git hub username" /></td>
+					</tr>
+					<tr>
+						<td class="tablelabel"></td>
+						<td class="tableval"
+							th:if="${#fields.hasErrors('githubusername')}"
+							th:errors="*{githubusername}">GitHub User Name Error</td>
+					</tr>
+					<tr>
+						<td><input type="submit" name="Submit"
+							class="buttonstylelogin" value="Submit" /></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+	<input type="button" class="buttonstyleright"
+		onClick="location.href='logout.html'" value='Click here to Logout' />
+</body>
+</html>

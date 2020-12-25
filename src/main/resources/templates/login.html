@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Login Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+<link href="css/main.css" rel="stylesheet" />
+</head>
+<div class="headfootContent">Login Page</div>
+<body class="body-content">
+	<div class="page-content">
+		<div class="login-content">
+			<form action="#" th:action="@{/validateUser}" th:object="${login}"
+				method="post">
+				<table class="tabledetails">
+					<tr>
+						<td class="tablelabel">Username:</td>
+						<td class="tableval"><input type="text"
+							th:field="*{userName}" th:required="required" maxlength="20"
+							placeholder="Enter your username" /></td>
+					</tr>
+					<tr>
+						<td class="tablelabel"></td>
+						<td class="tableval" th:if="${#fields.hasErrors('userName')}"
+							th:errors="*{userName}">User Name Error</td>
+					</tr>
+					<tr>
+						<td class="tablelabel">Password:</td>
+						<td class="tableval"><input type="password"
+							th:field="*{userPwd}" th:required="required"
+							placeholder="Enter your password" /></td>
+					</tr>
+					<tr>
+						<td class="tablelabel"></td>
+						<td class="tableval errstyle"
+							th:if="${#fields.hasErrors('userPwd')}" th:errors="*{userPwd}">Password
+							Error</td>
+					</tr>
+					<tr>
+						<td><input type="submit" name="Submit" value="Submit"
+							class="buttonstylelogin" /></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
